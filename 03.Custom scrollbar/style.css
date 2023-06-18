@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background: #d32ce9;
+}
+
+.card {
+  width: 700px;
+  background: #dfa3e7;
+  padding: 20px;
+  margin: 20px;
+  line-height: 28px;
+  border-radius: 9px;
+  font-size: 18px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#decae4, #573154);
+  border-radius: 100px;
+}
