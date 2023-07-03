@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #b3b1b1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: #ec37a7;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.clip1 {
+  background-image: url(images/En\ pirogue\ sur\ le\ fleuve\ Kourou.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 25% 0, 81% 100%, 0% 100%);
+}
+
+.clip2 {
+  background-image: url(images/5dccb022-586c-4ba7-a7a1-26e457165d03.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(24% 0, 100% 0, 60% 100%, 54% 100%);
+}
+
+.clip3 {
+  background-image: url(images/Portrait\ Photography\ _\ Easy\ Aesthetic\ Photo\ Ideas.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(100% 0, 48% 100%, 100% 100%);
+}
+
+.container:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+/* https://bennettfeely.com/clippy/ : website of the clip shapes*/
